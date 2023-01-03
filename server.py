@@ -25,8 +25,11 @@ def check_if_IP_in_file(IP):
     with open("./cache/IPs.csv", "r") as file:
         reader = csv.reader(file)
         for row in reader:
-            if row[0] == IP:
-                return True
+            try:
+                if row[0] == IP:
+                    return True
+            except IndexError:
+                return False
         return False
 
 def main():
