@@ -6,8 +6,8 @@ A simple chat program that allows users to communicate with one another over a n
 ## Requirements
 
 + Python 3.5 or higher
-+ Required Python modules for the client: socket, json, requests
-+ Required Python modules for the server: socket, json, requests, argparse
++ Required Python modules for the client: socket, json, requests, hashlib
++ Required Python modules for the server: socket, json, requests, hashlib, argparse
 
 ## Usage
 
