@@ -6,6 +6,13 @@ import os
 import argparse
 import time
 
+if(os.getcwd().endswith("p2pChat")):
+    pass
+elif(os.getcwd().endswith("Programming")):
+    os.chdir("./_Github/p2pChat")
+elif(os.getcwd().endswith("_Github")):
+    os.chdir("./p2pChat")
+
 def Listen_for_IP():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind(("localhost", 54587))
